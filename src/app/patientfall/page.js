@@ -21,7 +21,7 @@ export default function PatientfallPage() {
                 {/* Höger: bild */}
                 <div className="w-full h-full">
                     <img
-                        src="/images/patientfall.jpg"
+                        src="/images/PSatientfall.jpg"
                         alt="Patientfall"
                         className="w-full h-full object-cover"
                     />

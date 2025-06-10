@@ -9,7 +9,7 @@ export default function Navbar() {
         <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow p-4">
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/">
-                    <img src="/images/logo.png" alt="Logo" className="w-8" />
+                    <img src="/images/Logo.png" alt="Logo" className="w-8" />
                 </Link>
 
                 {/* Mobilmenyknapp */}
