@@ -34,7 +34,7 @@ export default function AkutPage() {
                 {/* Höger sida: bild */}
                 <div className="w-full h-full">
                     <img
-                        src="/images/frustrated-unhappy-woman-suffering-from-toothache-scaled.jpg"
+                        src="/images/akut.jpg"
                         alt="Tandvärk"
                         className="w-full h-full object-cover"
                     />
@@ -49,7 +49,7 @@ export default function AkutPage() {
 
                     <div className="mt-6 space-y-4 text-gray-800">
                         <img
-                            src="/images/frustrated-unhappy-woman-suffering-from-toothache-scaled.jpg"
+                            src="/images/akut.jpg"
                             alt="Tandvärk"
                             className="w-full max-w-md mx-auto rounded shadow"
                         />

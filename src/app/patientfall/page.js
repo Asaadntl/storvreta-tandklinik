@@ -7,7 +7,7 @@ export default function PatientfallPage() {
     return (
         <main>
             {/* Hero / Introdelad skärm */}
-            <header className="mt-18 grid grid-cols-1 md:grid-cols-2 h-[500px]">
+            <header className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
                 {/* Vänster: text med blå bakgrund */}
                 <div className="bg-blue-800 text-white flex items-center justify-center p-8">
                     <div className="max-w-md">

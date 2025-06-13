@@ -5,7 +5,7 @@ const behandlingsLista = [
     {
         id: 'akut-tandvard',
         title: 'Akut tandvård',
-        image: '/images/frustrated-unhappy-woman-suffering-from-toothache-scaled.jpg',
+        image: '/images/akut.jpg',
         content: (
             <div className="space-y-4 text-gray-800">
                 <p>
