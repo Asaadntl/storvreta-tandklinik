@@ -60,10 +60,16 @@ export default function InfoSektion() {
           <h3 className="text-xl font-bold">Boka tid</h3>
           <p>Här kan du kolla lediga tider samt boka tid online.</p>
         </div>
-        <a href="/boka" className="border border-white px-4 py-2 rounded hover:bg-white hover:text-sky-700 transition">
+        <a
+          href="https://bokatid.frenda.se/100076"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border border-white px-4 py-2 rounded hover:bg-white hover:text-sky-700 transition"
+        >
           Boka tid
         </a>
       </div>
+
     </section>
   );
 }
