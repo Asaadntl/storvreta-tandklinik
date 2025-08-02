@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="sv">
-      <body className="bg-gray-100 text-gray-900 font-sans pt-[44px]">
+      <body className="bg-gray-100 text-gray-900 font-sans">
         <Navbar />
         {children}
         <InfoBlocks />
