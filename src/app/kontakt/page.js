@@ -72,28 +72,33 @@ export default function KontaktPage() {
         ></iframe>
       </section>
       <section className="py-12 bg-white text-gray-800">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 border-b pb-2">Öppettider</h2>
-          <ul className="space-y-2 text-lg">
-            <li className="flex justify-between border-b pb-1">
-              <span>Vardagar</span>
-              <span>09:00 – 17:00</span>
-            </li>
-            <li className="flex justify-between border-b pb-1">
-              <span>Telefontider</span>
-              <span>08:30 – 16:30</span>
-            </li>
-            <li className="flex justify-between border-b pb-1">
-              <span>Söndag/Helgdagar</span>
-              <span>Stängt</span>
-            </li>
-            <li className="flex justify-between">
-              <span>Övriga tider</span>
-              <span>Enligt överenskommelse</span>
-            </li>
-          </ul>
-        </div>
-      </section>
+  <div className="max-w-4xl mx-auto px-4">
+    <h2 className="text-2xl font-bold mb-6 border-b pb-2">Öppettider</h2>
+    <ul className="space-y-2 text-lg">
+      <li className="flex justify-between border-b pb-1">
+        <span>Måndag – Torsdag</span>
+        <span>09:00 – 17:00</span>
+      </li>
+      <li className="flex justify-between border-b pb-1 text-gray-500">
+        <span>Fredag</span>
+        <span>Stängt</span>
+      </li>
+      <li className="flex justify-between border-b pb-1">
+        <span>Lördag</span>
+        <span>Enligt överenskommelse</span>
+      </li>
+      <li className="flex justify-between border-b pb-1">
+        <span>Söndag/Helgdagar</span>
+        <span>Stängt</span>
+      </li>
+      <li className="flex justify-between">
+        <span>Telefontider</span>
+        <span>08:30 – 16:30</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
       <section className="py-12 bg-gray-50 text-gray-800">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-6 border-b pb-2">Mejla oss</h2>
