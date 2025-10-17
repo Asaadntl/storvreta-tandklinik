@@ -1,4 +1,5 @@
-import BehandlingsLista from '../../components/BehandlingsLista';
+import Image from "next/image";
+import BehandlingsLista from "../../components/BehandlingsLista";
 
 export default function BehandlingarPage() {
   return (
@@ -8,23 +9,35 @@ export default function BehandlingarPage() {
         {/* Vänster: Text */}
         <div className="bg-purple-800 text-white flex items-center justify-center p-8">
           <div className="max-w-md">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Våra behandlingar</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              Våra behandlingar
+            </h1>
             <p className="text-lg">
-              Storvreta Tandklinik är inriktade på traditionell tandvård, estetisk tandvård samt olika former av specialisttandvård. Här erbjuds du som patient tandvård med hög kvalitet och ditt välbefinnande står alltid i fokus. Det är möjligt tack vare erfarna och högt kompetenta tandläkare. Här nedan kan du läsa mer om den tandvård vi erbjuder och våra behandlingsmetoder.
+              Storvreta Tandklinik är inriktade på traditionell tandvård,
+              estetisk tandvård samt olika former av specialisttandvård. Här
+              erbjuds du som patient tandvård med hög kvalitet och ditt
+              välbefinnande står alltid i fokus. Det är möjligt tack vare
+              erfarna och högt kompetenta tandläkare. Här nedan kan du läsa mer
+              om den tandvård vi erbjuder och våra behandlingsmetoder.
             </p>
           </div>
         </div>
 
         {/* Höger: Bild */}
         <div className="w-full h-full">
-          <img
+          <Image
             src="/images/behandlingar.jpg"
             alt="Tandbehandling"
+            width={1600}
+            height={1067}
             className="w-full h-full object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority
           />
         </div>
       </header>
-<BehandlingsLista />
+
+      <BehandlingsLista />
     </main>
   );
 }

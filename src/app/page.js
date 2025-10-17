@@ -1,4 +1,6 @@
-import InfoSektion from '../components/InfoSektion';
+"use client";
+import Image from "next/image";
+import InfoSektion from "../components/InfoSektion";
 
 export default function HomePage() {
   return (
@@ -7,10 +9,13 @@ export default function HomePage() {
       <header className="mt-18 relative w-full bg-black">
         {/* Bildcontainer */}
         <div className="relative w-full aspect-[16/9] md:aspect-[16/7]">
-          <img
+          <Image
             src="/images/hero.jpg"
             alt="Tandklinik"
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
           />
 
           {/* Ljuseffekt */}
@@ -29,7 +34,8 @@ export default function HomePage() {
           </div>
         </div>
       </header>
-      <InfoSektion/>
+
+      <InfoSektion />
     </main>
   );
 }

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useState } from "react";
 import {
   FaCalendarAlt,
@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaMapMarkedAlt,
 } from "react-icons/fa";
+import Image from "next/image";
 export default function KontaktPage() {
   const [isSent, setIsSent] = useState(false);
 
@@ -42,20 +43,27 @@ export default function KontaktPage() {
         {/* Vänster sida: text */}
         <div className="bg-blue-800 text-white flex items-center justify-center p-8">
           <div className="max-w-md">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Kontakta oss</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              Kontakta oss
+            </h1>
             <p className="text-lg leading-relaxed">
-              Här finner du öppettider och kontaktinformation till vår klinik i Storvreta.
-              Använd kartan för att hitta kliniken, eller scrolla längre ner där all kontaktinformation är listad.
+              Här finner du öppettider och kontaktinformation till vår klinik i
+              Storvreta. Använd kartan för att hitta kliniken, eller scrolla
+              längre ner där all kontaktinformation är listad.
             </p>
           </div>
         </div>
 
         {/* Höger sida: bild */}
         <div className="w-full h-full">
-          <img
+          <Image
             src="/images/kontakt.jpg"
             alt="Kontakt Storvreta Tandklinik"
+            width={1600}
+            height={1067}
             className="w-full h-full object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority
           />
         </div>
       </header>
@@ -72,42 +80,46 @@ export default function KontaktPage() {
         ></iframe>
       </section>
       <section className="py-12 bg-white text-gray-800">
-  <div className="max-w-4xl mx-auto px-4">
-    <h2 className="text-2xl font-bold mb-6 border-b pb-2">Öppettider</h2>
-    <ul className="space-y-2 text-lg">
-      <li className="flex justify-between border-b pb-1">
-        <span>Måndag – Torsdag</span>
-        <span>09:00 – 17:00</span>
-      </li>
-      <li className="flex justify-between border-b pb-1 text-gray-500">
-        <span>Fredag</span>
-        <span>Stängt</span>
-      </li>
-      <li className="flex justify-between border-b pb-1">
-        <span>Lördag</span>
-        <span>Enligt överenskommelse</span>
-      </li>
-      <li className="flex justify-between border-b pb-1">
-        <span>Söndag/Helgdagar</span>
-        <span>Stängt</span>
-      </li>
-      <li className="flex justify-between">
-        <span>Telefontider</span>
-        <span>08:30 – 16:30</span>
-      </li>
-    </ul>
-  </div>
-</section>
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 border-b pb-2">Öppettider</h2>
+          <ul className="space-y-2 text-lg">
+            <li className="flex justify-between border-b pb-1">
+              <span>Måndag – Torsdag</span>
+              <span>09:00 – 17:00</span>
+            </li>
+            <li className="flex justify-between border-b pb-1 text-gray-500">
+              <span>Fredag</span>
+              <span>Stängt</span>
+            </li>
+            <li className="flex justify-between border-b pb-1">
+              <span>Lördag</span>
+              <span>Enligt överenskommelse</span>
+            </li>
+            <li className="flex justify-between border-b pb-1">
+              <span>Söndag/Helgdagar</span>
+              <span>Stängt</span>
+            </li>
+            <li className="flex justify-between">
+              <span>Telefontider</span>
+              <span>08:30 – 16:30</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <section className="py-12 bg-gray-50 text-gray-800">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-6 border-b pb-2">Mejla oss</h2>
           {isSent ? (
-            <p className="text-green-600 font-medium text-lg">Meddelandet har skickats! Tack för att du kontaktade oss.</p>
+            <p className="text-green-600 font-medium text-lg">
+              Meddelandet har skickats! Tack för att du kontaktade oss.
+            </p>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block mb-1 font-medium" htmlFor="namn">Nämn</label>
+                <label className="block mb-1 font-medium" htmlFor="namn">
+                  Nämn
+                </label>
                 <input
                   type="text"
                   name="namn"
@@ -116,7 +128,9 @@ export default function KontaktPage() {
                 />
               </div>
               <div>
-                <label className="block mb-1 font-medium" htmlFor="email">E-post</label>
+                <label className="block mb-1 font-medium" htmlFor="email">
+                  E-post
+                </label>
                 <input
                   type="email"
                   name="email"
@@ -125,7 +139,9 @@ export default function KontaktPage() {
                 />
               </div>
               <div>
-                <label className="block mb-1 font-medium" htmlFor="meddelande">Meddelande</label>
+                <label className="block mb-1 font-medium" htmlFor="meddelande">
+                  Meddelande
+                </label>
                 <textarea
                   name="meddelande"
                   rows="5"
@@ -144,41 +160,65 @@ export default function KontaktPage() {
         </div>
       </section>
       <section className="py-12 bg-white text-gray-800">
-  <div className="max-w-4xl mx-auto px-4 text-center">
-    <h2 className="text-2xl font-bold mb-8">Här kan du hitta oss</h2>
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center text-sm">
-      <a href="https://bokatid.frenda.se/100076" target="_blank" className="flex flex-col items-center hover:text-blue-600 transition">
-        <FaCalendarAlt size={32} className="mb-2" />
-        Boka online
-      </a>
-      <a href="tel:018108001" className="flex flex-col items-center hover:text-blue-600 transition">
-        <FaPhone size={32} className="mb-2" />
-        Ringa oss
-      </a>
-      <a href="tel:0729293455" className="flex flex-col items-center hover:text-blue-600 transition">
-         <FaAmbulance size={32} className="mb-2" />
-        Akut telefon
-      </a>
-      <a href="mailto:storvretatandklinik@gmail.com" className="flex flex-col items-center hover:text-blue-600 transition">
-        <FaEnvelope size={32} className="mb-2" />
-        Mejla oss
-      </a>
-      <a href="https://www.facebook.com/storvreta.tandklinik" target="_blank" className="flex flex-col items-center hover:text-blue-600 transition">
-         <FaFacebook size={32} className="mb-2" />
-        Facebook
-      </a>
-      <a href="https://www.instagram.com/storvretatandklinik/" target="_blank" className="flex flex-col items-center hover:text-blue-600 transition">
-        <FaInstagram size={32} className="mb-2" />
-        Instagram
-      </a>
-      <a href="https://www.google.com/maps/place/Skogsvallsvägen+7,+740+47+Storvreta" target="_blank" className="flex flex-col items-center hover:text-blue-600 transition">
-        <FaMapMarkedAlt size={32} className="mb-2" />
-        Vägbeskrivning
-      </a>
-    </div>
-  </div>
-</section>
-
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-2xl font-bold mb-8">Här kan du hitta oss</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center text-sm">
+            <a
+              href="https://bokatid.frenda.se/100076"
+              target="_blank"
+              className="flex flex-col items-center hover:text-blue-600 transition"
+            >
+              <FaCalendarAlt size={32} className="mb-2" />
+              Boka online
+            </a>
+            <a
+              href="tel:018108001"
+              className="flex flex-col items-center hover:text-blue-600 transition"
+            >
+              <FaPhone size={32} className="mb-2" />
+              Ringa oss
+            </a>
+            <a
+              href="tel:0729293455"
+              className="flex flex-col items-center hover:text-blue-600 transition"
+            >
+              <FaAmbulance size={32} className="mb-2" />
+              Akut telefon
+            </a>
+            <a
+              href="mailto:storvretatandklinik@gmail.com"
+              className="flex flex-col items-center hover:text-blue-600 transition"
+            >
+              <FaEnvelope size={32} className="mb-2" />
+              Mejla oss
+            </a>
+            <a
+              href="https://www.facebook.com/storvreta.tandklinik"
+              target="_blank"
+              className="flex flex-col items-center hover:text-blue-600 transition"
+            >
+              <FaFacebook size={32} className="mb-2" />
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/storvretatandklinik/"
+              target="_blank"
+              className="flex flex-col items-center hover:text-blue-600 transition"
+            >
+              <FaInstagram size={32} className="mb-2" />
+              Instagram
+            </a>
+            <a
+              href="https://www.google.com/maps/place/Skogsvallsvägen+7,+740+47+Storvreta"
+              target="_blank"
+              className="flex flex-col items-center hover:text-blue-600 transition"
+            >
+              <FaMapMarkedAlt size={32} className="mb-2" />
+              Vägbeskrivning
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
