@@ -84,12 +84,8 @@ export default function KontaktPage() {
           <h2 className="text-2xl font-bold mb-6 border-b pb-2">Öppettider</h2>
           <ul className="space-y-2 text-lg">
             <li className="flex justify-between border-b pb-1">
-              <span>Måndag – Torsdag</span>
+              <span>Måndag – Fredag</span>
               <span>09:00 – 17:00</span>
-            </li>
-            <li className="flex justify-between border-b pb-1 text-gray-500">
-              <span>Fredag</span>
-              <span>Stängt</span>
             </li>
             <li className="flex justify-between border-b pb-1">
               <span>Lördag</span>
