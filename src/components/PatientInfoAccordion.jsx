@@ -43,6 +43,7 @@ const infoData = [
                 <p>
                     Om patienten använder sitt tandvårdsbidrag vid behandling dras det av innan eventuell ersättning från högkostnadsskyddet beräknas.
                 </p>
+                
 
                 <p className="text-sm text-gray-500">
                     <strong>Källa:</strong>{' '}
@@ -59,6 +60,98 @@ const infoData = [
             </div>
         )
     },
+    {
+    id: 'tiotandvardsreformen',
+    title: 'Tiotandvårdsreformen (67+)',
+    image: '/images/tiotandvard.png', // valfri bild
+    content: (
+        <div className="space-y-4 text-gray-800">
+            <h3 className="text-lg font-semibold text-gray-900">
+                Ny tandvårdsreform från 1 januari 2026
+            </h3>
+
+            <p>
+                En ny tandvårdsreform har röstats igenom av riksdagen och börjar gälla
+                från och med <strong>1 januari 2026</strong>.
+            </p>
+
+            <p>
+                Reformen gäller för dig som är <strong>67 år eller äldre</strong> och innebär
+                att du endast betalar <strong>10 % av statens referenspris</strong> för vissa
+                nödvändiga tandvårdsbehandlingar. Resterande kostnad ersätts av staten.
+            </p>
+
+            <h3 className="text-lg font-semibold text-gray-900">
+                Ingår – tandposition 1–5 (över- och underkäke)
+            </h3>
+
+            <p className="font-medium">Position 1–5</p>
+            <ul className="list-disc list-inside ml-4">
+                <li>Fyllningar</li>
+                <li>Rotbehandling</li>
+                <li>Utdragning</li>
+                <li>Kronor</li>
+                <li>Broar</li>
+                <li>Implantat</li>
+                <li>Avtagbara proteser</li>
+            </ul>
+
+            <p className="font-semibold text-green-700">
+                All ny protetik upp till och med tandposition 5 ingår.
+            </p>
+
+            <h3 className="text-lg font-semibold text-gray-900">
+                Ingår i vissa fall – tandposition 6–8
+            </h3>
+
+            <p>
+                För bakre kindtänder och visdomständer kan
+                <strong> reparation av befintlig protetik</strong> ingå
+                (t.ex. lagning av gammal krona eller bro).
+            </p>
+
+            <p className="text-red-700 font-medium">
+                Ny protetik ingår inte för tandposition 6–8
+                (ny krona, ny bro eller nya implantat).
+            </p>
+
+            <h3 className="text-lg font-semibold text-gray-900">
+                Ingår inte (oavsett tandposition)
+            </h3>
+
+            <ul className="list-disc list-inside ml-4">
+                <li>Undersökningar</li>
+                <li>Röntgen</li>
+                <li>Förebyggande vård (tandsten, puts, fluor, instruktion)</li>
+                <li>Estetisk tandvård (t.ex. tandblekning)</li>
+                <li>Byte av fyllningar av kosmetiska skäl</li>
+                <li>Rent kosmetiska behandlingar</li>
+            </ul>
+
+            <h3 className="text-lg font-semibold text-gray-900">
+                Viktig information
+            </h3>
+
+            <ul className="list-disc list-inside ml-4">
+                <li>Gäller från <strong>1 januari 2026</strong></li>
+                <li>Gäller patienter från <strong>67 år</strong></li>
+                <li>Patienten betalar <strong>10 % av referenspris</strong></li>
+                <li>Två system gäller parallellt: vanlig tandvård och tiotandvård</li>
+                <li>Ingen karenstid</li>
+            </ul>
+
+            <h3 className="text-lg font-semibold text-gray-900">
+                Snabb sammanfattning
+            </h3>
+
+            <ul className="list-disc list-inside ml-4">
+                <li>Position 1–5: all nödvändig vård + ny protetik ingår</li>
+                <li>Position 6–8: endast reparation av befintlig protetik kan ingå</li>
+                <li>Undersökning, röntgen och estetik ingår aldrig</li>
+            </ul>
+        </div>
+    )
+},
     {
         id: 'muntorrhet',
         title: 'Muntorrhet',
@@ -109,28 +202,26 @@ const infoData = [
             <div className="space-y-4 text-gray-800">
                 <h3 className="text-lg font-semibold text-gray-900">Undersökning</h3>
                 <ul className="list-disc list-inside ml-4">
-                    <li>Basundersökning från 1015 kr (inkl. 4 röntgenbilder).</li>
-                    <li>Omfattande undersökning: 1960 kr (extra kostnad kan tillkomma vid fler bilder).</li>
+                    <li>Basundersökning från 1100kr (inkl. 4 röntgenbilder).</li>
+                    <li>Omfattande undersökning: från 1935 till 2730 kr (extra kostnad kan tillkomma vid fler bilder).</li>
                     <li>Akut undersökning: 690 kr (kan tillkomma vid fler röntgenbilder).</li>
                 </ul>
 
                 <h3 className="text-lg font-semibold text-gray-900">Återbud eller uteblivande</h3>
                 <ul className="list-disc list-inside ml-4">
-                    <li>Sent återbud eller uteblivande (kortare än 1 timme): 700 kr.</li>
-                    <li>Långa behandlingar (längre än 1 timme): 1000 kr.</li>
+                    <li>Sent återbud eller uteblivande (kortare än 1 timme): 600 kr.</li>
                     <li>Återbud måste lämnas minst 24 timmar innan.</li>
                     <li>Vi debiterar via Payzmart fakturatjänst.</li>
                     <li>Vid fler än 4 om-/avbokningar blir patienten avlistad.</li>
                 </ul>
 
                 <p>
-                    Onlinebokningar kan av-/ombokas via hemsidan senast 48 timmar innan.
-                    Sent återbud inom 48 timmar debiteras med 700 kr.
+                    Onlinebokningar kan av-/ombokas via hemsidan senast 24 timmar innan.
+                    Sent återbud inom 24 timmar debiteras med 600 kr.
                 </p>
 
                 <h3 className="text-lg font-semibold text-gray-900">Övrig information</h3>
                 <ul className="list-disc list-inside ml-4">
-                    <li>OB-tillägg: 500 kr extra för lördagstider.</li>
                     <li>Vi lämnar inga fakturor – endast betalning via kort eller Swish accepteras.</li>
                 </ul>
 

@@ -89,7 +89,7 @@ export default function KontaktPage() {
             </li>
             <li className="flex justify-between border-b pb-1">
               <span>Lördag</span>
-              <span>Enligt överenskommelse</span>
+              <span>Stängt</span>
             </li>
             <li className="flex justify-between border-b pb-1">
               <span>Söndag/Helgdagar</span>

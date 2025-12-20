@@ -17,7 +17,7 @@ export default function InfoBlocks() {
         <div className="bg-white p-6 rounded shadow">
           <h2 className="text-xl font-semibold mb-2 text-gray-800">Öppettider</h2>
           <p className="text-gray-700">Måndag – Fredag: 09:00 – 17:00</p>
-          <p className="text-gray-700">Lördag: Enligt överenskommelse</p>
+          <p className="text-gray-700">Lördag: Stängt</p>
           <p className="text-gray-700">Söndag/Helgdagar: Stängt</p>
           <p className="text-gray-700">Övriga tider: Enligt överenskommelse</p>
         </div>
