@@ -204,7 +204,7 @@ const infoData = [
                 <ul className="list-disc list-inside ml-4">
                     <li>Basundersökning från 1100kr (inkl. 4 röntgenbilder).</li>
                     <li>Omfattande undersökning: från 1935 till 2730 kr (extra kostnad kan tillkomma vid fler bilder).</li>
-                    <li>Akut undersökning: 690 kr (kan tillkomma vid fler röntgenbilder).</li>
+                    <li>Akut undersökning: 690 kr (extra kostnad kan tillkomma vid fler röntgenbilder).</li>
                 </ul>
 
                 <h3 className="text-lg font-semibold text-gray-900">Återbud eller uteblivande</h3>
