@@ -138,6 +138,57 @@ const behandlingsLista = [
         )
     },
     {
+        id: 'hifu-behandling',
+        title: 'HIFU',
+        image: '/images/hifu.png',
+        content: (
+            <div className="space-y-4 text-gray-800">
+                <p>
+                    <strong>HIFU</strong> står för High-Intensity Focused Ultrasound. På svenska
+                    översätts detta till <strong>högintensivt fokuserat ultraljud</strong>.
+                </p>
+
+                <h3 className="text-lg font-semibold text-gray-900">Så fungerar HIFU-behandling</h3>
+                <p>
+                    <strong>HIFU</strong> fungerar som ett <strong>kirurgiskt ansiktslyft – fast helt
+                    utan kniv eller nålar</strong>.
+                </p>
+
+                <ol className="list-decimal list-inside space-y-3">
+                    <li>
+                        <strong>Precision på djupet:</strong> Behandlingen använder
+                        <strong> fokuserad ultraljudsenergi</strong> som passerar genom hudytan utan
+                        att skada den. Energin levereras exakt till samma djupa hudlager
+                        (SMAS-lagret) som kirurger stramar upp under en operation.
+                    </li>
+                    <li>
+                        <strong>Kontrollerad värme:</strong> Ultraljudsvågorna skapar en kontrollerad
+                        värme på upp till 65 grader i de djupare vävnaderna.
+                    </li>
+                    <li>
+                        <strong>Kollagenkick:</strong> Värmen sätter igång en naturlig läkningsprocess
+                        i kroppen, vilket triggar en <strong>kraftig nyproduktion av kollagen och
+                        elastin</strong>.
+                    </li>
+                </ol>
+
+                <h3 className="text-lg font-semibold text-gray-900">Resultatet</h3>
+                <p>
+                    Huden stramas upp inifrån och ut. Eftersom kollagenet byggs upp gradvis, ser
+                    man det slutgiltiga resultatet av lyftet efter <strong>2 till 6 månader</strong>.
+                    Huden blir fastare, rynkor reduceras och konturer (som käklinjen) blir tydligare.
+                    En direkt förändring ses och känns i huden redan från första behandlingen och
+                    förbättras med tiden upp till 6 månader.
+                </p>
+
+                <p>
+                    <strong>Återhämtningstid:</strong> Ingen alls – kunden kan gå direkt tillbaka till
+                    jobbet eller sina vardagliga aktiviteter direkt efter behandlingen.
+                </p>
+            </div>
+        )
+    },
+    {
         id: 'kirurgi-implantat-behandling',
         title: 'Kirurgi / Implantat behandling',
         image: '/images/kirurgi.jpg',
